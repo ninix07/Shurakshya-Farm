@@ -14,7 +14,7 @@ const Header = () => {
             <div className="bg-primary rounded-full p-2">
               <Leaf className="h-6 w-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">AgriPure</span>
+            <span className="text-xl font-bold text-foreground">Shurakshya Krishi Farm</span>
           </div>
 
           {/* Desktop Navigation */}

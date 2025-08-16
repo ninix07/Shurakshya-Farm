@@ -9,22 +9,22 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Our Location",
-      content: "123 Organic Farm Road\nGreenville, CA 95947"
+      content: "Illam Municipality-5, Illam"
     },
     {
       icon: Phone,
       title: "Phone Number",
-      content: "+1 (555) 123-4567"
+      content: "+977 9999999"
     },
     {
       icon: Mail,
       title: "Email Address",
-      content: "contact@agripure.com"
+      content: "contact@Shurakshya Krishi Farm.com"
     },
     {
       icon: Clock,
       title: "Business Hours",
-      content: "Mon-Fri: 8AM-6PM\nSat-Sun: 9AM-5PM"
+      content: "Everyday"
     }
   ];
 

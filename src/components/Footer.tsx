@@ -47,7 +47,7 @@ const Footer = () => {
                 <div className="bg-primary rounded-full p-2">
                   <Leaf className="h-6 w-6 text-primary-foreground" />
                 </div>
-                <span className="text-xl font-bold">AgriPure</span>
+                <span className="text-xl font-bold">Shurakshya Krishi Farm</span>
               </div>
               <p className="text-white/80 leading-relaxed max-w-sm">
                 Cultivating sustainable agriculture for a healthier planet. 
@@ -126,7 +126,7 @@ const Footer = () => {
         <div className="border-t border-white/20 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-white/60">
-              © 2024 AgriPure. All rights reserved.
+              © 2024 Shurakshya Krishi Farm. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-white/60 hover:text-primary transition-colors">
