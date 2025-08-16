@@ -4,6 +4,10 @@ import { useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+};
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
@@ -17,24 +21,24 @@ const Header = () => {
             <span className="text-xl font-bold text-foreground">Shurakshya Krishi Farm</span>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-muted-foreground hover:text-primary transition-colors">
+         <nav className="hidden md:flex items-center space-x-8">
+            <button onClick={() => scrollToSection("home")} className="text-muted-foreground hover:text-primary transition-colors">
               Home
-            </a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+            </button>
+            <button onClick={() => scrollToSection("about")} className="text-muted-foreground hover:text-primary transition-colors">
               About
-            </a>
-            <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+            </button>
+            <button onClick={() => scrollToSection("services")} className="text-muted-foreground hover:text-primary transition-colors">
               Services
-            </a>
-            <a href="#products" className="text-muted-foreground hover:text-primary transition-colors">
+            </button>
+            <button onClick={() => scrollToSection("products")} className="text-muted-foreground hover:text-primary transition-colors">
               Products
-            </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+            </button>
+            <button onClick={() => scrollToSection("contact")} className="text-muted-foreground hover:text-primary transition-colors">
               Contact
-            </a>
+            </button>
           </nav>
+
 
           {/* CTA Button */}
           <div className="hidden md:block">
@@ -56,21 +60,21 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              <a href="#home" className="text-muted-foreground hover:text-primary transition-colors">
+               <button onClick={() => {scrollToSection("home"); setIsMenuOpen(false);}} className="text-muted-foreground hover:text-primary transition-colors">
                 Home
-              </a>
-              <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+              </button>
+              <button onClick={() => {scrollToSection("about"); setIsMenuOpen(false);}} className="text-muted-foreground hover:text-primary transition-colors">
                 About
-              </a>
-              <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+              </button>
+              <button onClick={() => {scrollToSection("services"); setIsMenuOpen(false);}} className="text-muted-foreground hover:text-primary transition-colors">
                 Services
-              </a>
-              <a href="#products" className="text-muted-foreground hover:text-primary transition-colors">
+              </button>
+              <button onClick={() => {scrollToSection("products"); setIsMenuOpen(false);}} className="text-muted-foreground hover:text-primary transition-colors">
                 Products
-              </a>
-              <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+              </button>
+              <button onClick={() => {scrollToSection("contact"); setIsMenuOpen(false);}} className="text-muted-foreground hover:text-primary transition-colors">
                 Contact
-              </a>
+              </button>
               <Button variant="default" className="bg-primary hover:bg-accent w-fit">
                 Get Started
               </Button>
